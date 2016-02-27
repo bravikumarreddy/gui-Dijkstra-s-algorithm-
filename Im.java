@@ -9,7 +9,7 @@ public class Im {
 	public static ArrayList<Integer> path(int[][] costmat,int start, int end, int n)
 	{
 		
-		System.out.println("Enter the no of Vertices");
+		//System.out.println("Enter the no of Vertices");
 		
 		
 		int[][] back = new int[n][n];
@@ -69,10 +69,10 @@ public class Im {
 		
 		int track = found;
 		
-		System.out.println(Arrays.toString(pq)+" this is pq");
+		//System.out.println(Arrays.toString(pq)+" this is pq");
 		int temp = vio.pop();
 		res.add(temp);
-		System.out.println(temp +"  end");
+		//System.out.println(temp +"  end");
 		while(!vio.isEmpty())
 		{
 			if(found==0)
@@ -87,7 +87,7 @@ public class Im {
 			{
 				end=vio.pop();
 				res.add(end);
-				System.out.println(end +"  end");
+				//System.out.println(end +"  end");
 			}
 			found--;
 			

@@ -152,7 +152,7 @@ class dijigui extends JPanel
 		addMouseListener(new MouseAdapter(){ 
 			int i = 0;
 			public void mousePressed(MouseEvent event) {
-				//System.out.println("MousePressedAdapter");
+				
 				
 				
 				if(findpath)
@@ -168,7 +168,7 @@ class dijigui extends JPanel
 								s1=i;
 								S1=(Float) on;
 								s++;
-								System.out.println("contains  s1");
+								
 								repaint();
 								
 							}
@@ -186,7 +186,7 @@ class dijigui extends JPanel
 								s2=i;
 								S2=(Float) on;
 								s = 0;
-								System.out.println("contains  s2");
+								
 								repaint();
 								
 								
@@ -213,8 +213,7 @@ class dijigui extends JPanel
 				
 				if(rects==0 && boo)
 				{
-					System.out.println("one");
-					System.out.println(Lines.size());
+					
 					for(int i=0;i<rect.size();i++)
 					{
 						Point p = event.getPoint();
@@ -234,8 +233,7 @@ class dijigui extends JPanel
 				{
 					
 					//System.out.println("in two");
-					System.out.println("two");
-
+					
 					for(int i=0;i<rect.size();i++)
 					{
 						Point p = event.getPoint();
@@ -248,7 +246,7 @@ class dijigui extends JPanel
 						}
 					}
 					
-					System.out.println("three");
+					//System.out.println("three");
 					int x1=(int) l.one.getX();
 					int x2=(int) l.two.getX();
 					int y1=(int) l.one.getY();
@@ -361,7 +359,7 @@ class dijigui extends JPanel
 			if(rect.get(i)==S1 || rect.get(i)==S2)
 			{
 				g2.setColor(Color.blue);
-				System.out.println("blue");
+				//System.out.println("blue");
 				
 			}
 			else{
